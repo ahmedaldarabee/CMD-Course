@@ -1,0 +1,166 @@
+
+	{ Firstly , when you want to instulation the cmder software : https://cmder.app/ (' i recommend to download full package version ') }
+	{ recommend course when you want to have more understanding about this topic: }
+
+	 	- { https://www.youtube.com/playlist?list=PLDoPjvoNmBAxzNO8ixW83Sf8FnLy_MkUT  }
+		- { https://youtu.be/wmZMMcm7zWA?si=CP_NqOXjF4w2Z1Yt }
+
+
+color command :
+ 
+	- one value  [ if  you want to change color of words ] : color red
+	- two value [ if you want to change both background-color or color ] color : red [ word ] black [ background-color ]
+	- color [ will return cmd to the default color ! ]
+
+
+can be any of the following values:
+
+    0 = Black       8 = Gray
+    1 = Blue        9 = Light Blue
+    2 = Green       A = Light Green
+    3 = Aqua        B = Light Aqua
+    4 = Red         C = Light Red
+    5 = Purple      D = Light Purple
+    6 = Yellow      E = Light Yellow
+    7 = White       F = Bright White
+
+
+title command :
+	- [ if you want to change title of cmd! ]
+
+cd [ change directories ] command :
+	- [ to enter in the some folder ] | cd.. [ to out from current folder ]
+
+mkdir | md  command :
+
+	- to create folder
+	- if you want to create folder have space needed to use " ... "
+	- if you want to create folder in some place in PC use md ..\folder-name
+
+clear | cls [ to do clear in cmd screen ] command :
+
+\ [ to return in root url! ]
+
+ls [ to show all list files inside folder! ]
+
+[ Hind : if you want to complete any syntax: use tab ]
+
+-  dir [ to show all content inside folder ]
+
+rename  ( move || mv ) command :
+	- [ if you want to do rename to the filder of files : move needed-folder new-name]
+	- [ Note: if you have folder have the same name of your new name needed so will do moving this folder inside folder : mv test testing ( where testing is already exist so will added test to the testing folder ) ]
+	- Ex: [ move "css new version" js]  if you want to move content + folder )
+	- mv folder-name ..\ :
+		- [ will return folder to the one stage ( previous folder ) ! ]: move .net ..\
+	
+	- Summary :
+
+		- if exist folder with the same name will do moving
+		- else will do renaming to the folder !
+
+
+Removeing folder - file command :
+
+	- [ for folder: rd /s /q folder-name ]
+	- [ del file-name ]
+	- rm -R js-part2\ [  for folder have content ] | if you have folder without content rm [ folder-name ]
+	
+
+copy || cp command :
+
+	- if you want to do copy where folder have content: 
+	- cp --help [ this command when you want to know more info about some command! ]
+	 	- EX: [ cp -r js js-part2 ]
+		- ( -r message error ' recursive ' ) refer to the folder have content , this content can't be do copy on it! and when you used so will do copy to the folder even have content!
+
+- writting inside files command :
+
+	- echo " ... " > file-name ( if file not exit will created new file )
+	- the main different between > and >> that be in overriden content where > will do override but >> will do appending proccess to the file
+	- [ Note:  text override refer to the content that changed to the new content where new content be as rather than last content ]
+	
+- cat file-name command  :
+
+	- this command when you want to know content of file [ cat ahmed-info.txt ]
+	- also cat command will do copy content of some file [ cat ahmed-info.txt > new-file.txt ]
+		- you can do that with multi files: file1.ex files2.ex files3.ex files4.ex > new-file.ex
+		- cat file-one.txt file-two.txt file-third.txt >> new-fourth.txt
+		- cat * ( to show content of each file )
+			- but when you want to see each content think about do : cat file-one.txt file-two.txt file-third.txt >> new-fourth.txt
+
+grep [ global regular expression print ] command  :
+
+	- will do searching about content in files ( access in some line )
+		Ex: grep "ahmed" ahmed.info.txt :
+		λ grep "first" new-fourth.txt
+		hello in first file
+		- but if file doesn't have this content will not show you result about searching
+		- grep --help ( when you want to see multi options )
+		- if you want to show each file that have this content: 
+			- grep "content here ... " -r 
+			- grep "hello" -r -l
+		if you want to search in folder not in file: grep " content needs " -r folder-name
+
+
+if you want to stop cmd word: ctrl + c
+if you want to stop cmd software: exit command
+
+
+file command :
+	- if you want to know the type of file if be as txt , docx , pptx , xls , others ...
+	- if you want to know each files in this filder :  file *
+
+command manual : 
+	- command-name /? like : ( move /? )
+	- used when you want to know more informations about some command!
+
+ping command : 
+	- used when you want if some site it work or not ?
+	- ping site-name or when you want to see more info : ping site-name -t
+
+
+type command used when you want to create files and copy file content in new file like :
+	- type ahmed-info.txt >> ahmed-all-info.txt
+	- also you can do copy ping informations though this way :
+		ping site-name >> site-info.txt
+
+
+structure of your folders :
+	- tree /a ( to know each folder that have files )
+
+osk ( on screen keyboard )
+	- when you want to write command through external screen keyboard!
+
+tasklist command: 
+
+	- ( same ctrl + alt + delete idea)
+	- when you want to see each of softwares are worked! 
+	- ( if you want to stop some softwares  )
+
+
+alias command:
+	- when you want to set shorthand name to the files to be lowerest letter
+	- EX: alias ah=ahmed
+
+Also here example ( advance example ) about github command :
+	- git config --global alias.st status
+	- git config --global alias.com "-m commit"
+
+When you want to know more informations about ip configration: 
+	- ipconfig command
+	- if when you want to open some software : ipconfig && mspaint
+
+whoami command :
+	- when you want to know your device name 
+
+systeminfo command :
+	- when you want to know each inforamtions about you system
+
+command-name |clip :
+	- This way when you want to do copy informations in your Clipboard 
+	- to access in your Clipboard Click: Window + V
+
+
+Finally i will happy when you see resource to have more informations about this topics :
+	https://ss64.com/
