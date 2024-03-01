@@ -1,3 +1,6 @@
+
+{ Firstly , when you want to installation the cmder software : https://cmder.app/ (' i recommend to download full package version ') }
+
 color command :
  
 	- one value  [ if  you want to change color of words ] : color red
@@ -187,6 +190,13 @@ encryption informations:
 	- if you want to remove encryptions: cipher /d file-name like cipher /d test-cipher.txt
 	
 Finally i will happy when you see resource to have more informations about this topics :
-	
+
+sites that have many commands: 
+
 	1- https://ss64.com/
 	2- https://www.thomas-krenn.com/en/wiki/Cmd_commands_under_Windows
+
+youtube channels to do more clarifications and understanding about command lines :
+
+	 	- { https://www.youtube.com/playlist?list=PLDoPjvoNmBAxzNO8ixW83Sf8FnLy_MkUT  }
+		- { https://youtu.be/wmZMMcm7zWA?si=CP_NqOXjF4w2Z1Yt }
