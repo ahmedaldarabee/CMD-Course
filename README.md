@@ -1,2 +1,2 @@
 # CMD-Course
-This  description for beginner that needed have basic knowledge about cmd topic and will have start way to have experience about this position
+These descriptions oriented for beginners that needed have basic knowledge about cmd topics and needed to start way to have experience about admin data position
