@@ -1,8 +1,7 @@
 
 ملاحظة مهمة:
 
-لاتنسى انك تستخدم امر بل في حالة انك رفعت ملفات على قيتهب وحبيت ترجع تعدل عليها
-Used to update an existing local repository with the latest changes from the remote
+Pull command : Used to update an existing local repository with the latest changes from the remote
 
 
 git [ it will show all informations about git ]
