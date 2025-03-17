@@ -1,0 +1,151 @@
+
+ملاحظة مهمة:
+
+لحتى تشوف اخر تحديث على الريبو من خلال امر بل
+Used to update an existing local repository with the latest changes from the remote
+
+
+git [ it will show all informations about git ]
+
+config -> access and manage you github account
+init -> start create and manage your repo
+
+differences between tracked file and untracked file [ in git status ]
+
+tracked file -> files added into github repo [ staged area ]
+untracked file -> files that aren't added into github repo [ unstaged area ]
+
+To move from unstaged area into staged area [ use git  or git file-name ]
+
+when you want to dependant new files [ modifyed files ] after changes use [ git restore ] file-name
+you can use git add then git status that's enough
+
+commit -a -m [ be as ' do that | depend that as meaning ' ] and used to ensure your changes
+to see al available commit: git log origin/master
+
+-a -m to stage and commit your file
+
+The main target of commit is to register project changes and status in history [ #Important ]
+
+git help [ to know all of commands in git ]
+
+or you can know command info to each command : git command-name -help
+
+New Branch :
+new copy of repo without impacting the main bransh [ and used in some cases for emergency changes ]
+
+to create new branch: git branch br-name [ ولا تنسى انو بحتوي على نسخة من كل التعديلات والملفات لي موجودة على لفرع الثاني ]
+to switch into specific branch : git checkout br-name
+
+compare and pull request [ to dependant your new branches that added ]
+
+
+merge that used to compose multiple branches to have main changes between them [ provide synchronization between braches ]
+
+if you want to delete branch: git branch -d name-here
+
+to manage repos in your computer [ These operations called manager project in local repo ] to do all of the next operations in your laptop device :
+- staging to the files
+- commit your changes
+- manager project branch and history
+
+git remote add origin repo-link [ HTTPS Link ]
+
+some important concepts :
+
+- `origin`: Refers to the remote repository (the one you cloned from) in your local repository.
+- `main`: The default branch of your project, previously called `master`.
+
+to submit your changes into remote repo: git push --set-upstream origin master
+
+README.md [.md] refer to the markup language where the main goal of it :
+be as [ Project Documentation ] to provide all informations about project.
+
+how to pull [ fetch and merge ] changes from remote repo into local repo
+git merge origin/master [ لحتى اي تعديل على ريموت ريبو يتم اضافته الى لوكال ريبو ]
+
+also you can do : git pull origin
+
+`.gitignore file` ensures that unnecessary or sensitive files are not included in the repository,
+to created : touch .gitignore
+then you want to handle it manually
+
+to check if the specific files are not send into remote repo use this command [ git rm --cached file-name ]
+
+git diff [ to show new changes after you modify the section in the file ]
+
+git rm "...."
+
+to return from staged area into unstaged or untracked area:
+- git add *
+- git commit -a -m "..."
+- git rm "...."
+- git restore --staged file-name [ But still not appear ]
+- git restore "your file" [ this command to appear deleted data ]
+
+[ لاتنسى انو القيت كوميت بتم توفيرها بعد كل تعديل ]
+
+to rename file : git mv "last" "new"
+
+to know all commit info [ git log -p ]
+
+الهدف من البرانشس هوا انك تجنب حدوث كونفلكت عندما يكون اكثر من شخص شغال على المشروع بحيث كل منكم بشتغل على برانش لحال وبعدها بتم دمجها من قبل المسؤول بعد ما يتأكد من انو كلهم تمام وما فيهم مشاكل
+
+git branch -d name [ to delete branch ] | you can use swith rather than checkout to switch between current branches
+
+يحدث الكونفلكت لما يكونو شخصين بشتغلو على تاسك واحد والمفروض انو كل شخص يشتغل على تاسك خاص فيه دون تدخل بالأخر وغالباَ تحدث عندما يكونو مطورين ثنين 
+
+
+to get remote repo into your local device:
+
+git clone link
+cd project-link
+git remote -v
+
+then you must see :
+origin  link  (fetch)
+origin  link (push)
+
+
+The -u (or --set-upstream) flag in git push -u origin master sets the upstream branch.  
+
+ Simple Explanation:  
+- It links your local master branch to the remote master branch on origin.
+
+to remove current repo:
+- git remote remove origin
+
+if you want to merge one branch into another branch:
+
+Suppose this scenario: 
+- branch emergency have changes you want to move / merged into master branch, so you need to do that:
+
+- git checkout master | git switch master
+- git pull origin master
+- git add .
+- git commit -m "Merged emergency branch into master"
+- git merge emergency
+- git push origin master
+
+Notes: if you face screen: 
+- Enter esc then write [ :wq ]
+- if you want to avoid merge process: write [ :q! ] in screen after you add esc
+- if you want to check if merge process successfully, and without facing problems: 
+  - git log --oneline --graph --all
+
+Issues in github:
+
+الهدف منها لما تكون شغال مع تيم وفي حالة انك اكتشفت مشكلة او انك بدك تعمل تحسين للكود او حتى توفر حل لمشكلة
+فأذا اردت توثيق هذه المشكلة ومحاولة حلها فيكون ذلك من خانة المشاكل او الأشيوز
+
+title: تعرف عن المشكلة التي ترغب في توثيقها ومحاولة حلها
+description: هي وصف للمشكلة بحيث انك توفر حل الها مع توفير المشكلة نفسها من خلال صور او موارد اخرى ان ارت
+
+يمكنك الدردشة مع المسؤول بخصوص هذه المشكلة وان ضغط على كلوز فهذا يشير الى حل المشكلة وانها انتهت
+
+
+Tips to increase you github rank:
+
+- do commit every day in your project
+- do pull and merge in continue way
+- provide Issues in continues way
